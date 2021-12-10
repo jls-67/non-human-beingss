@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --pink: #FC1263;
+    --blue: #06002E;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.heading {
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    text-transform: uppercase;
+    color: var(--blue);
+    padding-bottom: 2.5rem;
+}
+
+
+/*============================HEADER========================*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+    height: 7.8rem;
+    background-color: #010101;
+    opacity: 0.95;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 0 3%;
+}
+
+.header .logo-btn {
+    background: none;
+    height: 3.6rem;
+    cursor: pointer;
+}
+
+.header .logo-btn img {
+    max-width: 100%;
+}
+
+.header .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header .nav-list a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 2.8rem;
+} 
+
+.header .nav-list a:hover {
+    color: #FC1263;
+}
+
+.header svg:hover #icon {
+    fill: #FC1263;
+}
+
+.header .mobile-menu {
+    background: white;
+    width: 3rem;
+
+    display: none;
+}
+
+/* ======================HERO SECTION =============== */
+
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    padding: 5rem;
+}
+
+.hero-container .hero-img img {
+    max-width: 100%;  
+}
+
+.hero-container .hero-btn { 
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+
+    width: 204px;
+    min-height: 60px;
+    border-radius: 6rem;
+    border-style: hidden;
+    background-color: var(--pink);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+.hero-container .hero-btn:last-child {
+    background-color: #552267;
+}
+
+.hero-container p {
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    max-width: 55.8rem;
+    color: var(--blue);
+}
+
+
+
+
+
+/* =======================ABOUT SECTION===============*/
+
+.about-container {
+    min-height: 100vh;
+    background-color: #0ADBC6;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+
+    padding: 5rem 7%;
+}
+
+.about-container .about-img img{
+    width: 100%;
+}
+
+.about-container p {
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    color: var(--blue);
+}
+
+.about-text-container {
+    max-width: 54rem;
+}
+
+/*=======================SPECS SECTION =================*/
+
+.specs-container {
+    min-height: 50rem;
+    background-color: rgba(238, 42, 123, 1);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specs-container .specs-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    
+    padding: 5rem;
+}
+
+.specs-container h3 {
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    text-align: center;
+}
+
+.specs-container p {
+    font-size: 2.2rem;
+    line-height: 3.9rem;
+    text-align: center;
+    max-width: 28rem;
+
+}
+
+/* ==========================COMMUNITY SECTION ============= */
+
+
+.community-container {
+    min-height: 100vh;
+    background-color: rgba(44, 8, 72, 1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+
+    padding: 7%;
+}
+
+.community-container .community-img img {
+    max-width: 100%;  
+}
+
+.community-container h2 {
+    font-weight: 900;
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.community-container p {
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    color: #FFFFFF;
+}
+
+.community-text-container {
+    max-width: 60rem;
+    width: 100%;
+}
+
+/* ====================ROADMAP SECTION =============== */
+
+.roadmap-container {
+    background-color: #CDE5E3;
+    height: auto;
+    padding: 12rem 5rem;
+}
+
+
+.roadmap-container h1 {
+    font-weight: 900;
+    font-size: 6.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    padding-bottom: 13rem;
+}
+
+.roadmap-container li {
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 9.6rem;
+    color: #000000;
+    max-width: 61rem;
+}
+
+.roadmap-container h2 {
+    width: 34.5rem;
+    min-height: 9.6rem;
+    font-size: 5.4rem;
+    color: #FFFFFF;
+    background-color: #FC1263;;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.sold-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    
+    /*border-bottom: 1px solid black;*/
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 95%;               
+    background-color:black;
+    height: .3px;
+  }
+  
+
+/* ====================TEAM SECTION =================== */
+
+.team-container {
+    background-color: #0ADBC6;
+    padding: 15rem 7%;
+}
+
+.team-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30rem;
+}
+
+.team-container img {
+    max-width: 100%;
+}
+
+.team-container h4 {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.team-container h6 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.team-container p {
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    color: #122046;
+    max-width: 62rem;
+}
+
+.team-member-1, 
+.team-member-2, 
+.team-member-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.team-container a {
+    color: var(--blue);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* ======================FOOTER ======================*/
+
+footer {
+    background: rgba(44, 8, 72, 1);
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem 0;
+}
+
+footer img {
+    max-width: 9.5rem;
+}
+
+footer p {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/* ======================MEDIA QUERIES================== */
+
+@media screen and (max-width: 880px) {
+    .header .logo-btn img{
+        width: 70%;
+    }
+
+    .header {
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    #mobile-menu {
+        display: flex;
+        position: absolute;
+        right: 3rem;
+        cursor: pointer;
+    }
+
+    .header .nav-list {
+        display: block;
+        position: absolute;
+        width: 60%;
+        height: calc(100vh - 7.8rem);
+        padding: 7rem 4rem;
+        background-color: #EE2A7B;
+
+        right: 0;
+        top: 7.8rem; 
+        display: none;
+    }
+
+    .header .nav-list li a {
+        text-align: left;
+        display: block;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .header .nav-list li a:hover {
+        color: var(--blue);
+    }
+
+    .header svg:hover #icon {
+        fill: var(--blue);
+    }
+
+    .hero-text-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-container h1 {
+        max-width: 55.8rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 40%;
+    }
+
+    .logo-btn {
+        margin: 0;
+        width: 35rem;
+        width: 70%;
+    }
+
+    .hero-container {
+        flex-direction: column; 
+        justify-content: flex-start;
+        gap: 4rem;
+        min-height: 90vh;
+    }
+
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .hero-container .hero-text-container .hero-btn{
+       margin: 1rem auto;
+    }
+
+    .about-container {
+        flex-direction: column;
+        min-height: 90vh;
+    }
+
+    .roadmap-container h1 {
+        font-style: 24px;
+    }
+
+    .roadmap-container h2{
+        width: 156px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .roadmap-container li {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .sold-container {
+        gap: 5rem;
+    }
+
+    .community-container {
+        flex-direction: column;
+        min-height: 85vh;
+    }
+
+    .team-container {
+        padding-top: 4rem;
+    }
+
+    footer {
+        padding: 4rem 0;
+    }
+}
