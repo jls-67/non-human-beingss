@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>non-human beings</title>
+</head>
+<body>
+    <header class="header">         
+            <button type="button" class="logo-btn">
+                <img src="/assets/logo.svg" alt="non-human beings logo" class="logo">
+            </button>
+
+                <img onclick="toggleMenu()" id="mobile-menu" class="mobile-menu" src="assets/menu-icon.svg" alt="menu icon">
+
+            <nav>
+                
+                <ul class="nav-list">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#specs">SPECS</a></li>
+                    <li><a href="#community">COMMUNITY</a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#the-team">THE TEAM</a></li>
+                    <li class="nav-icons"><a href="#"><svg width="23" height="17" viewBox="0 0 23 17" xmlns="http://www.w3.org/2000/svg">
+                        <path id="icon" d="M16.9747 17C16.9747 17 16.2653 16.1298 15.6744 15.3606C18.2535 14.6121 19.2389 12.952 19.2389 12.952C18.5305 13.4366 17.7709 13.8372 16.9747 14.1459C16.0582 14.5477 15.0997 14.8397 14.1182 15.0161C12.4321 15.3354 10.7029 15.3288 9.01908 14.9968C8.03015 14.7978 7.06095 14.5066 6.12355 14.1266C5.62958 13.9298 5.14924 13.6987 4.68588 13.4348C4.62665 13.3947 4.56877 13.374 4.50954 13.3338C4.47935 13.3192 4.45233 13.2985 4.43012 13.273C4.07609 13.071 3.87955 12.9299 3.87955 12.9299C3.87955 12.9299 4.82184 14.5485 7.32565 15.3177C6.7347 16.0869 6.00509 16.9972 6.00509 16.9972C1.65305 16.8589 0 13.9204 0 13.9204C0 7.4043 2.83495 2.12224 2.83495 2.12224C5.67125 -0.0636328 8.3689 -0.00276043 8.3689 -0.00276043L8.56543 0.239346C5.02107 1.29493 3.38687 2.89421 3.38687 2.89421C3.38687 2.89421 3.82032 2.65072 4.54858 2.30762C6.65527 1.3558 8.32986 1.09294 9.01908 1.03207C9.12896 1.00841 9.24069 0.99498 9.35292 0.991949C10.6725 0.814925 12.0079 0.800992 13.3307 0.950446C15.409 1.19314 17.4211 1.8511 19.2537 2.8873C19.2537 2.8873 17.6989 1.36548 14.3511 0.316819L14.6203 -0.00691065C14.6203 -0.00691065 17.3126 -0.067783 20.1529 2.11809C20.1529 2.11809 22.9892 7.40015 22.9892 13.9163C23 13.9232 21.3254 16.8547 16.9747 17ZM7.82102 7.54818C6.69835 7.54818 5.81259 8.56088 5.81259 9.79493C5.81259 11.029 6.71854 12.0417 7.82102 12.0417C8.9437 12.0417 9.82945 11.029 9.82945 9.79493C9.84964 8.56088 8.9437 7.54818 7.82102 7.54818ZM15.0094 7.54818C13.8867 7.54818 13.0009 8.56088 13.0009 9.79493C13.0009 11.029 13.9055 12.0417 15.0094 12.0417C16.1132 12.0417 17.0178 11.029 17.0178 9.79493C17.0178 8.56088 16.1307 7.54818 15.0094 7.54818Z" fill="#ffffff"/>
+                        </svg></a></li>
+                    <li class="nav-icons"><a href="#"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="icon" d="M23 2.35177C22.1385 2.7553 21.2249 3.01951 20.2898 3.1356C21.2738 2.50973 22.0109 1.52591 22.3644 0.366548C21.438 0.95121 20.4243 1.36286 19.3672 1.58362C18.6562 0.777163 17.7148 0.242564 16.6888 0.0627514C15.6628 -0.117061 14.6097 0.0679655 13.6928 0.589128C12.7758 1.11029 12.0464 1.93846 11.6175 2.94516C11.1887 3.95186 11.0845 5.08082 11.321 6.1569C9.44578 6.05668 7.61137 5.53847 5.93686 4.63593C4.26235 3.73339 2.78516 2.4667 1.60119 0.918078C0.997451 2.02257 0.812404 3.33003 1.08371 4.57438C1.35501 5.81874 2.06228 6.90648 3.06157 7.61625C2.31187 7.58867 1.57913 7.37176 0.923969 6.98349V7.04619C0.922142 8.20541 1.29815 9.32953 1.98806 10.2274C2.67797 11.1253 3.63921 11.7416 4.70836 11.9715C4.01338 12.1715 3.28465 12.2008 2.57746 12.057C2.88001 13.0522 3.46738 13.9222 4.2576 14.5456C5.04782 15.169 6.00146 15.5147 6.98542 15.5343C5.3141 16.9286 3.24989 17.6846 1.12512 17.6806C0.749128 17.6804 0.373457 17.6571 0 17.6108C2.1577 19.0841 4.66883 19.8663 7.23351 19.8639C15.9127 19.8639 20.6586 12.2223 20.6586 5.5954C20.6586 5.37877 20.6586 5.16785 20.6452 4.94696C21.5688 4.23776 22.3659 3.35889 22.9987 2.35177H23Z" fill="white"/>
+                        </svg>
+                        </a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section>
+        <div class="hero-container">
+            <div class="hero-img">
+                <img src="/assets/Group 10330.png" alt="group-nft">
+            </div>
+            <div class="hero-text-container">
+                <h1 class="heading">more than <br> just another nft</h1>
+                <p>Sure, we could have built a casino in the Metaverse.
+                We could have even built a Metaverse bar.
+                <br>
+                <br>
+                Instead, we decided to expose inner city youth to the power of art through NFTs and perhaps birth the next great NFT artists.
+                </p>
+                <button type="button" class="hero-btn">Mint our NFT</button>
+                <button type="button" class="hero-btn">Join our Discord!</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="/assets/05 1.png" class="punk-nft" alt="punk nft">
+            </div>
+            <div class="about-text-container">
+                <h2 class="heading">WHAT'S NON-HUMAN BEINGS?</h2>
+                <p>Non Human Beings (NHBs) are just that – not human beings and the brainchild of two intergalactic psychonauts. One, a corporate designer by day and devious graffiti artist by night. The other, a washed up insomniac software developer. 
+                <br>
+                <br>
+                Both fell from tech corpo space to create an NFT collection constructed from over 500 assets to create a truly unique NFT project. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs">
+        <div class="specs-container">
+            <ul class="specs-list">
+                <li>
+                    <h3>10,000</h3>
+                    <p>10,000 random Non-Human Beings NFTs</p>
+                </li>
+                <li>
+                    <h3>0.05ETH</h3>
+                    <p>Fair Launch and distribution - all Non-Human Beings have the same cost of 0.05 ETH</p>
+                </li>
+                <li>
+                    <h3>©</h3>
+                    <p>Includes creative and commercial rights usage of your Non-Human for as long as you keep the NFT</p>
+                </li>
+                <li>
+                    <h3>100%</h3>
+                    <p>Unlock additional benefits through roadmap activations and future phases</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="community">
+        <div class="community-container">
+            <div class="community-img">
+                <img src="/assets/Group 10316.png" width="458px" alt="heart-nft">
+            </div>
+            <div class="community-text-container">
+                <h2>community first</h2>
+                <p>Too many NFTs hold no value over time. With NHBs not only do you acquire some cool art, but we keep the floors swept, and contribute a ton of money to children’s art charity. By joining our discord you can participate in deciding the charities as well as other decisions we make. 
+                <br>
+                <br>
+                Our early adopters also get the ability to buy early, with no gas wars, in exchange for simply participating in the process.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap">
+        <div class="roadmap-container">
+            <h1 class="heading">ROADMAP</h1>
+    <div class="roadmap-flex-container">
+            <div class="sold-container">
+                <h2>10% SOLD</h2>
+                    <li>Pay our wives back and avoid divorce</li>
+            </div>
+
+            <hr>
+
+            <div class="sold-container">
+                    <h2>23% SOLD</h2>
+                <ul>
+                    <li>Air Drop 20 NFTs to holders</li>
+                    <li>Community fund 5 ETH</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="sold-container">
+                    <h2>42% SOLD</h2>
+                <ul>
+                    <li>Charity to be selected by community ($40,000!)</li>
+                    <li>Community fund 5 ETH Air</li>
+                    <li>Drop 20 NFTs to holders </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="sold-container">
+                    <h2>61% SOLD</h2>
+                <ul>
+                    <li>Community fund 5 ETH</li>
+                    <li>Air Drop 20 NFTs to holders</li>
+                    <li>Physical artwork giveaway</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="sold-container">
+                    <h2>84% SOLD</h2>
+                <ul>
+                    <li>Another charity to be selected by community ($40,000!)</li>
+                    <li>Community fund 5 ETH</li>
+                    <li>Air Drop 20 NFTs to holders</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="sold-container">
+                    <h2>100% SOLD</h2>
+                <ul>
+                    <li>Sweeping the floor begins</li>
+                    <li>Air drop 20 NFTs to holders</li>
+                    <li>Community fund 5 ETH</li>
+                    <li>5 Unique “1 of 1” NHBs Air Dropped to holders</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="the-team">
+        <div class="team-container">
+            <h4 class="heading">meet the (human) team</h4>
+            <div class="team-flex-container">
+            <div class="team-member-1">
+                    <div class="image-ryan">
+                        <img src="/assets/Group 10280.png" alt="ryan">
+                    </div>
+                    <div class="text-ryan flex-text">
+                        <h5 class="heading">ryan</h5>
+                        <h6>the brains</h6>
+                        <p>Ryan has written code for over 25 years, working in both small and large software companies. He has formed multiple startups and has had catchy titles like CEO and CTO next to his name. Ryan hated writing this. 
+                            <br>
+                            You can find him on <a href="#">Linked In</a> 
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member-2">
+                    <div class="image-zoroe">
+                        <img src="/assets/Group 10294.png" alt="zoroe">
+                    </div>
+                    <div class="text-zoroe flex-text">
+                        <h5 class="heading">zoroe</h5>
+                        <h6>the artist</h6>
+                        <p>Zoroe started writing graffiti in the early 90’s. He’s spent the past 20 years designing experiences for Amazon, Facebook, SONY and many more. You can find him on <a href="#">YouTube,</a> <a href="#">LinkedIn,</a> or <a href="#">Zoroe.io</a>
+                        </p>
+                    </div>
+                </div>
+                    <div class="team-member-3">
+                        <div class="image-art-advisors">
+                            <img src="/assets/Group 10293.png" alt="art advisors">
+                        </div>
+                        <div class="text-art-advisors flex-text">
+                            <h5 class="heading">art advisors</h5>
+                            <h6>the council</h6>
+                            <p>The council serves as our guiding light to ensure that we help nonprofits in need of our help. With the council’s help we ensure money goes to the kids in most need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <img src="/assets/Group 10276.svg" alt="X">
+        <p>© 2021 NON-HUMAN BEINGS NFT</p>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
