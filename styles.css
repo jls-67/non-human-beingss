@@ -31,6 +31,7 @@ html {
 }
 
 
+
 /*============================HEADER========================*/
 
 .header {
@@ -70,15 +71,14 @@ html {
 } 
 
 .header .nav-list a:hover {
-    color: #FC1263;
+    color: var(--pink);
 }
 
 .header svg:hover #icon {
-    fill: #FC1263;
+    fill: var(--pink);
 }
 
 .header .mobile-menu {
-    background: white;
     width: 3rem;
 
     display: none;
@@ -123,6 +123,11 @@ html {
 
 .hero-container .hero-btn:last-child {
     background-color: #552267;
+}
+
+.hero-text-container .hero-btn:hover {
+    background-color: white;
+    color: var(--blue);
 }
 
 .hero-container p {
@@ -262,12 +267,17 @@ html {
     padding-bottom: 13rem;
 }
 
-.roadmap-container li {
+.roadmap-container li,
+.roadmap-container p {
     font-weight: 500;
     font-size: 4.8rem;
     line-height: 9.6rem;
     color: #000000;
     max-width: 61rem;
+}
+
+.roadmap-container p {
+    display: list-item;
 }
 
 .roadmap-container h2 {
@@ -287,6 +297,7 @@ html {
     flex-direction: column;
     gap: 8rem;
 }
+
 
 .sold-container {
     display: flex;
@@ -395,17 +406,20 @@ footer p {
 
 
 
-
 /* ======================MEDIA QUERIES================== */
+
 
 @media screen and (max-width: 880px) {
     .header .logo-btn img{
-        width: 70%;
+        width: 80%;
     }
 
     .header {
         justify-content: space-between;
         padding-left: 0;
+        position: fixed; 
+        width: 100%;
+        z-index: 100;
     }
 
     #mobile-menu {
@@ -442,6 +456,16 @@ footer p {
     .header svg:hover #icon {
         fill: var(--blue);
     }
+    
+    /* .hero-text-container .hero-btn:hover {
+        background-color: white;
+        color: var(--blue);
+    } */
+
+    .hero-container {
+        padding-top: 12rem;
+    }
+
 
     .hero-text-container {
         display: flex;
@@ -459,7 +483,6 @@ footer p {
     html {
         font-size: 50%;
     }
-
 }
 
 @media screen and (max-width: 425px) {
@@ -498,22 +521,28 @@ footer p {
     }
 
     .roadmap-container h1 {
-        font-style: 24px;
+        font-size: 34px;
+        margin: auto;
+    }
+
+    .sold-container {
+        justify-content: flex-start;
+        padding-left: 3rem;
     }
 
     .roadmap-container h2{
         width: 156px;
         height: 40px;
         font-size: 24px;
+        margin: auto;
     }
 
-    .roadmap-container li {
+    .roadmap-container li,
+    .roadmap-container p {
         font-size: 18px;
-        line-height: 21px;
-    }
-
-    .sold-container {
-        gap: 5rem;
+        line-height: 30px;
+        max-width: 300px;
+        text-align: left;
     }
 
     .community-container {
@@ -528,4 +557,5 @@ footer p {
     footer {
         padding: 4rem 0;
     }
+
 }
